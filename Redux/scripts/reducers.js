@@ -50,6 +50,7 @@ export function todoAppReducer(state = initialState, action) {
   };
 }
 
+//Redux的combineReducers函数提供了上面todoAppReducer函数的功能
 export const todoApp = combineReducers({
   visibilityFilter,
   todos
