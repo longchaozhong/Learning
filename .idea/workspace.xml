@@ -2,25 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae84f79d-8ab8-4d1f-a300-8873c125b472" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Redux/scripts/actions/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Redux/scripts/components/App.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Redux/scripts/components/Footer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Redux/scripts/components/Link.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Redux/scripts/containers/AddTodo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Redux/scripts/containers/FilterLink.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Redux/scripts/containers/VisibleTodoList.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Redux/scripts/reducers/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Redux/scripts/reducers/todos.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Redux/scripts/reducers/visibilityFilter.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Redux/scripts/actions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Redux/scripts/reducers.js" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MyMin" afterPath="$PROJECT_DIR$/MyMin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Redux/assets/bundle.js" afterPath="$PROJECT_DIR$/Redux/assets/bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Redux/index.html" afterPath="$PROJECT_DIR$/Redux/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Redux/scripts/components/Todo.js" afterPath="$PROJECT_DIR$/Redux/scripts/components/Todo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Redux/scripts/components/TodoList.js" afterPath="$PROJECT_DIR$/Redux/scripts/components/TodoList.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Redux/scripts/index.js" afterPath="$PROJECT_DIR$/Redux/scripts/index.js" />
     </list>
     <ignored path="learning.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -110,14 +94,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VisibleTodoList.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="VisibleTodoList.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Redux/scripts/containers/VisibleTodoList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+            <state relative-caret-position="625">
+              <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -165,7 +159,6 @@
         <option value="$PROJECT_DIR$/Redux/.babelrc" />
         <option value="$PROJECT_DIR$/Redux/webpack.config.js" />
         <option value="$PROJECT_DIR$/Redux/package.json" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Redux/scripts/components/Todo.js" />
         <option value="$PROJECT_DIR$/Redux/scripts/components/Link.js" />
         <option value="$PROJECT_DIR$/Redux/scripts/components/Footer.js" />
@@ -176,6 +169,7 @@
         <option value="$PROJECT_DIR$/Redux/scripts/containers/AddTodo.js" />
         <option value="$PROJECT_DIR$/Redux/scripts/index.js" />
         <option value="$PROJECT_DIR$/Redux/index.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -359,6 +353,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Koa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -379,9 +387,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\www\learning" />
       <recent name="E:\www\learning\Redux\scripts" />
       <recent name="E:\www\learning\Redux\scripts\components" />
-      <recent name="E:\www\learning" />
       <recent name="E:\www\learning\Redux" />
       <recent name="E:\www\learning\HelloWorld\libs\redux" />
     </key>
@@ -459,7 +467,7 @@
       <workItem from="1474524773876" duration="619000" />
       <workItem from="1475908875350" duration="6386000" />
       <workItem from="1475974868973" duration="10795000" />
-      <workItem from="1476062587805" duration="8612000" />
+      <workItem from="1476062587805" duration="8687000" />
     </task>
     <task id="LOCAL-00001" summary="--">
       <created>1476000244553</created>
@@ -482,11 +490,18 @@
       <option name="project" value="LOCAL" />
       <updated>1476007452095</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="--">
+      <created>1476088874810</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1476088874810</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37946000" />
+    <option name="totallyTimeSpent" value="38021000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -790,7 +805,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore" />
     <entry file="file://$PROJECT_DIR$/Redux/scripts/reducers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1325">
@@ -920,11 +934,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Redux/scripts/containers/VisibleTodoList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+        <state relative-caret-position="625">
+          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
