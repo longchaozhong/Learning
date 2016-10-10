@@ -1,8 +1,15 @@
-/**
- * Created by longcz on 2016/10/9.
- */
-import {createStore} from 'redux';
+import React from 'react'
+import { render } from 'react-dom'
+import { createStore } from 'redux'
+import { Provider } from 'react-redux'
+import App from './components/App'
+import reducer from './reducers'
 
-import {todoApp} from  './reducers';
+const store = createStore(reducer)
 
-const store = createStore(todoApp);
+render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
+);
