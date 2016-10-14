@@ -55,6 +55,7 @@
 
 	var arrIterator = arr[Symbol.iterator]();
 	var setIterator = set[Symbol.iterator]();
+	var mapIterator = map[Symbol.iterator]();
 
 	console.log(arrIterator.next());
 	console.log(arrIterator.next());
@@ -70,6 +71,13 @@
 	console.info(setIterator.next());
 	console.info(setIterator.next());
 	console.info(setIterator.next());
+
+	console.warn(mapIterator.next());
+	console.warn(mapIterator.next());
+	console.warn(mapIterator.next());
+	console.warn(mapIterator.next());
+	console.warn(mapIterator.next());
+	console.warn(mapIterator.next());
 
 /***/ }
 /******/ ]);
