@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { addTodo } from '../actions'
 
 let AddTodo = ({ dispatch }) => {
-  let input
+  let input;
 
   return (
     <div>
@@ -24,7 +24,8 @@ let AddTodo = ({ dispatch }) => {
       </form>
     </div>
   )
-}
-AddTodo = connect()(AddTodo)
+};
 
-export default AddTodo
+AddTodo = connect()(AddTodo);
+
+export default AddTodo;

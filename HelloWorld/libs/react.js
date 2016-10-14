@@ -10872,7 +10872,7 @@ function validateExplicitKey(element, parentType) {
     childOwner = ' It was passed a child from ' + element._owner.getName() + '.';
   }
 
-  "development" !== 'production' ? warning(false, 'Each child in an array or iterator should have a unique "key" prop.' + '%s%s See https://fb.me/react-warning-keys for more information.%s', currentComponentErrorInfo, childOwner, ReactComponentTreeHook.getCurrentStackAddendum(element)) : void 0;
+  "development" !== 'production' ? warning(false, 'Each child in an array or arrIterator should have a unique "key" prop.' + '%s%s See https://fb.me/react-warning-keys for more information.%s', currentComponentErrorInfo, childOwner, ReactComponentTreeHook.getCurrentStackAddendum(element)) : void 0;
 }
 
 /**
@@ -18019,16 +18019,16 @@ module.exports = getHostComponentFromComposite;
 /* global Symbol */
 
 var ITERATOR_SYMBOL = typeof Symbol === 'function' && Symbol.iterator;
-var FAUX_ITERATOR_SYMBOL = '@@iterator'; // Before Symbol spec.
+var FAUX_ITERATOR_SYMBOL = '@@arrIterator'; // Before Symbol spec.
 
 /**
- * Returns the iterator method function contained on the iterable object.
+ * Returns the arrIterator method function contained on the iterable object.
  *
  * Be sure to invoke the function with the iterable as context:
  *
  *     var iteratorFn = getIteratorFn(myIterable);
  *     if (iteratorFn) {
- *       var iterator = iteratorFn.call(myIterable);
+ *       var arrIterator = iteratorFn.call(myIterable);
  *       ...
  *     }
  *
