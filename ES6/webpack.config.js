@@ -5,7 +5,7 @@ module.exports = {
   entry: {
     proxy: "./src/proxy.js",
     iterator: "./src/iterator.js",
-    generator: ["babel-polyfill", "./src/generator.js"]
+    generator:  "./src/generator.js"
   },
   output: {
     path: __dirname + "/dest",
