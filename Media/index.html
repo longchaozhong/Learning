@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="dist/css/bootstrap-theme.min.css">
+    <!-- 滑动条 -->
+    <link rel="stylesheet" href="slider/css/bootstrap-slider.min.css">
+    <!--  -->
+    <link rel="stylesheet" href="icon/iconfont.css">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="dist/js/jquery-3.1.1.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="dist/js/bootstrap.min.js"></script>
+    <!-- 滑动条 -->
+    <script src="slider/bootstrap-slider.min.js"></script>
+
+    <style>
+        .video-player {
+            background: #4b4b4b;
+        }
+
+        .video-player video {
+            display: block;
+            height: 400px;
+            margin: 0 auto;
+        }
+
+        .video-player .controller {
+            height: 42px;
+            color: #ffffff;
+            line-height: 42px;
+        }
+
+        .video-player .controller .time {
+            float: left;
+            margin: 0 36px 0 26px;
+        }
+
+        .video-player .controller .name {
+            float: left;
+            font-size: 14px;
+        }
+
+        .video-player .controller .player-icon {
+            float: left;
+            margin-right: 10px;
+            color: #00a0e9;
+            cursor: pointer;
+        }
+
+        .video-player .controller .volume {
+            float: right;
+            margin-right: 10px;
+            line-height: 42px;
+        }
+
+        .video-player .controller .icon-pause {
+            display: none;
+        }
+
+        .video-player .controller .volume .slider {
+            width: 100px;
+            margin-top: 5px;
+        }
+
+        .video-player .controller .volume .icon-no-voice {
+            display: none;
+        }
+
+        /*覆盖拖动条默认样式*/
+        .slider.slider-horizontal .slider-track {
+            height: 4px;
+        }
+
+        .slider-track {
+            background: #BABABA;
+        }
+
+        .slider-handle {
+            width: 16px;
+            height: 16px;
+            background: #fff;
+        }
+
+        .slider-selection {
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+<div class="video-player">
+    <video id="video-player">
+        <source src="media/movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+    <div class="controller">
+        <span class="time">00:00:00</span>
+        <i class="player-icon icon-play" onclick="play();"></i>
+        <i class="player-icon icon-pause" onclick="pause();"></i>
+        <span class="name">周杰伦-一路向北.mp3</span>
+        <div class="volume">
+            <i class="player-icon icon-volume"></i>
+            <i class="player-icon icon-no-voice"></i>
+            <div class="volume-slider" data-slider-max="100" data-slider-value="100"></div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var player = document.getElementById("video-player");
+    var duration = player.duration;
+
+    player.addEventListener('ended', function () {
+        document.querySelector(".controller .time").innerHTML = "00:00:00";
+        document.querySelector(".controller .icon-play").style.display = "inline";
+        document.querySelector(".controller .icon-pause").style.display = "none";
+    }, false);
+    player.addEventListener('timeupdate', function (e) {
+        document.querySelector(".controller .time").innerHTML = formatTime(Math.floor(e.target.currentTime));
+    }, false);
+    player.addEventListener('loadedmetadata', function (e) {
+        console.info('>>>>>', player.duration);
+    }, false);
+
+    var volumeSlide = new Slider('.volume-slider', {
+        formatter: function (value) {
+            return value;
+        }
+    });
+
+    volumeSlide.on("slide", function (value) {
+        setVolume(value);
+    });
+
+    function play() {
+        player.play();
+        document.querySelector(".controller .icon-play").style.display = "none";
+        document.querySelector(".controller .icon-pause").style.display = "inline";
+    }
+
+    function pause() {
+        player.pause();
+        document.querySelector(".controller .icon-play").style.display = "inline";
+        document.querySelector(".controller .icon-pause").style.display = "none";
+    }
+
+    function setVolume(volume) {
+        player.volume = volume / 100;
+        if (volume == 0) {
+            document.querySelector(".volume .icon-volume").style.display = "none";
+            document.querySelector(".volume .icon-no-voice").style.display = "inline";
+        } else {
+            document.querySelector(".volume .icon-volume").style.display = "inline";
+            document.querySelector(".volume .icon-no-voice").style.display = "none";
+        }
+    }
+
+    function formatTime(s) {
+        var h = parseInt(s / 3600);
+        var m = parseInt((s - h * 3600) / 60);
+        var min = parseInt(s - h * 3600 - m * 60);
+        if (h <= 9) {
+            h = "0" + h.toString();
+        }
+        if (m <= 9) {
+            m = "0" + m.toString();
+        }
+        if (min <= 9) {
+            min = "0" + min.toString();
+        }
+        return h.toString() + ":" + m.toString() + ":" + min.toString();
+    }
+</script>
+</body>
+</html>
