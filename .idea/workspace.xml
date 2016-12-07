@@ -37,8 +37,55 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Media/index.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="608">
               <caret line="129" column="47" selection-start-line="129" selection-start-column="47" selection-end-line="129" selection-end-column="47" />
+=======
+            <state relative-caret-position="875">
+              <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="generator.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ES6/src/generator.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="367">
+              <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ES6/webpack.config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".babelrc" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ES6/.babelrc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ES6/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+>>>>>>> 86f50792a32e331b3517e3f704144990ff100302
               <folding />
             </state>
           </provider>
@@ -106,6 +153,7 @@
         <option value="$PROJECT_DIR$/ES6/src/generator.js" />
         <option value="$PROJECT_DIR$/ES6/webpack.config.js" />
         <option value="$PROJECT_DIR$/ES6/.babelrc" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/Redux/index.html" />
         <option value="$PROJECT_DIR$/node/HelloWorld/main.js" />
         <option value="$PROJECT_DIR$/node/HelloWorld/utils/count.js" />
@@ -113,6 +161,8 @@
         <option value="$PROJECT_DIR$/Media/audio.html" />
         <option value="$PROJECT_DIR$/Media/vedio.html" />
         <option value="$PROJECT_DIR$/Media/index.html" />
+=======
+>>>>>>> 86f50792a32e331b3517e3f704144990ff100302
       </list>
     </option>
   </component>
@@ -318,12 +368,16 @@
       <workItem from="1476148215170" duration="10540000" />
       <workItem from="1476234149326" duration="1251000" />
       <workItem from="1476322383859" duration="8465000" />
+<<<<<<< HEAD
       <workItem from="1476410682825" duration="10126000" />
       <workItem from="1476762612873" duration="3353000" />
       <workItem from="1476839131992" duration="5350000" />
       <workItem from="1476925624195" duration="1248000" />
       <workItem from="1480987562511" duration="11725000" />
       <workItem from="1481074096424" duration="8153000" />
+=======
+      <workItem from="1476410682825" duration="9324000" />
+>>>>>>> 86f50792a32e331b3517e3f704144990ff100302
     </task>
     <task id="LOCAL-00001" summary="--">
       <created>1476000244553</created>
@@ -371,7 +425,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="101266000" />
+=======
+    <option name="totallyTimeSpent" value="70635000" />
+>>>>>>> 86f50792a32e331b3517e3f704144990ff100302
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -690,6 +748,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Redux/scripts/containers/VisibleTodoList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -751,6 +810,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="608">
           <caret line="129" column="47" selection-start-line="129" selection-start-column="47" selection-end-line="129" selection-end-column="47" />
+=======
+    <entry file="file://$PROJECT_DIR$/ES6/src/generator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/.babelrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+>>>>>>> 86f50792a32e331b3517e3f704144990ff100302
           <folding />
         </state>
       </provider>
