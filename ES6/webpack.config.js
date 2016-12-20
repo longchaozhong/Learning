@@ -5,7 +5,8 @@ module.exports = {
   entry: {
     proxy: "./src/proxy.js",
     iterator: "./src/iterator.js",
-    generator:  "./src/generator.js"
+    generator:  "./src/generator.js",
+    promise:  "./src/promise.js"
   },
   output: {
     path: __dirname + "/dest",

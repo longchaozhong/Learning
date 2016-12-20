@@ -7,9 +7,17 @@
             padding: 50px;
             font: 14px Helvetica, Arial;
         }
+
         .bar {
             height: 18px;
             background: green;
+        }
+
+        .drop-zone {
+            width: 500px;
+            height: 500px;
+            margin: 10px auto;
+            background: greenyellow;
         }
     </style>
 </head>
@@ -18,6 +26,7 @@
 <p>Try uploading multiple files at a time.</p>
 
 <input id="fileupload" type="file" name="file" multiple data-url="/upload">
+<div class="drop-zone"></div>
 <div id="progress">
     <div class="bar" style="width: 0%;"></div>
 </div>
@@ -30,9 +39,14 @@
     $(function () {
         $('#fileupload').fileupload({
             dataType: 'json',
+            dropZone: $(".drop-zone"),
             add: function (e, data) {
-                data.context = $('<p/>').text('Uploading...').appendTo(document.body);
-                data.submit();
+                data.context = $('<button/>').text('Upload')
+                        .appendTo(document.body)
+                        .click(function () {
+                            data.context = $('<p/>').text('Uploading...').replaceAll($(this));
+                            data.submit();
+                        });
             },
             progressall: function (e, data) {
                 var progress = parseInt(data.loaded / data.total * 100, 10);
@@ -43,7 +57,12 @@
             },
             done: function (e, data) {
                 data.context.text('Upload finished.');
-            }
+            },
+            disableImageResize: /Android(?!.*Chrome)|Opera/
+                    .test(window.navigator && navigator.userAgent),
+            imageMaxWidth: 800,
+            imageMaxHeight: 800,
+            imageCrop: true // Force cropped images
         });
     });
 </script>
