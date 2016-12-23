@@ -12,3 +12,8 @@ function main(argv) {
 }
 
 main(process.argv.slice(2));
+
+
+function copyRight(){
+  console.info("OH, my my, Lihai le word g");
+}
