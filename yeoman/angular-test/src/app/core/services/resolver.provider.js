@@ -9,18 +9,12 @@ export default function (app) {
     }
 
     
-        function asyncPagePrealoading ($q, $ocLazyLoad) {
+        function asyncPagePrealoading ($q) {
             "ngInject";
 
-            var deferred = $q.defer();
-            require.ensure([], function (require) {
-                var asyncModule = require('../../pages/async-page-example/async.module');
-                $ocLazyLoad.load({
-                    name: asyncModule.name,
-                });
-                deferred.resolve(asyncModule.controller);
-            });
-            return deferred.promise;
+            var defer = $q.defer();
+            // Some async stuff (request, calculations, etc.)
+            return defer.promise;
         }
     
 

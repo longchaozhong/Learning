@@ -15,8 +15,7 @@ const App = angular.module(
 	"ngSanitize", 
 	"ngMessages", 
 	"ngAria", 
-	"ngResource", 
-	"oc.lazyLoad",
+	"ngResource",
 
     // core
     require("./core/core.module").name,

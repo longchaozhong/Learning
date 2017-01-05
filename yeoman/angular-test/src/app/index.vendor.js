@@ -8,8 +8,6 @@ import "angular-ui-router";
 
 import "angular-resource";
 
-import "oclazyload";
-
 import "angular-animate";
 
 import "angular-cookies";
